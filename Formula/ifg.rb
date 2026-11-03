@@ -3,27 +3,27 @@ class Ifg < Formula
   homepage "https://github.com/lengyuqu/ifg"
   url "https://github.com/lengyuqu/ifg/archive/refs/tags/v0.1.0.tar.gz"
   license "MIT"
-  version "0.7.0"
+  version "0.7.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lengyuqu/ifg/releases/download/v0.7.0/ifg-0.7.0-x86_64-apple-darwin.tar.gz"
-      sha256 "794552a254ee1ca37add98bbeefe1f12d238b364a9ad05da471177d9e141a027"
+      url "https://github.com/lengyuqu/ifg/releases/download/v0.7.1/ifg-0.7.1-x86_64-apple-darwin.tar.gz"
+      sha256 "ae5b74bbbd0fe5348e728ebdf06c6581ca96eacae8f3e3766dfdf969202d88d9"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lengyuqu/ifg/releases/download/v0.7.0/ifg-0.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "1de4030342a6ef03f5bc88170ac8677a604569009fda2c1fbca3827469c94f3d"
+      url "https://github.com/lengyuqu/ifg/releases/download/v0.7.1/ifg-0.7.1-aarch64-apple-darwin.tar.gz"
+      sha256 "5fbf2c3ec128a7c810ff3dbbd19fa9b8f038c0ae7dbd0ed6292c5f6d43b0829e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lengyuqu/ifg/releases/download/v0.7.0/ifg-0.7.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "085f82b58d55c4c5ec0d4f5773f1a345317a6e9f6710ac5dab445959f800db2d"
+      url "https://github.com/lengyuqu/ifg/releases/download/v0.7.1/ifg-0.7.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d965c3dd980db4ec65309de8d4b29d86ec3056458967948c32d0438823cc61ae"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lengyuqu/ifg/releases/download/v0.7.0/ifg-0.7.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e4c6eb1de15403a992b6b3efb48328ca8c7e46f43cfa608db6e5c7a893755d77"
+      url "https://github.com/lengyuqu/ifg/releases/download/v0.7.1/ifg-0.7.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "4f7083c29324e9f4f609abdbb1e70b0fc945f3bb166c9efffd090791de702b3a"
     end
   end
 
