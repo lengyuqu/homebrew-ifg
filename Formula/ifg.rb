@@ -29,6 +29,8 @@ class Ifg < Formula
 
   def install
     bin.install "ifg"
+    # The release archive ships the generated man pages alongside the binary.
+    man1.install Dir["man/*.1"]
   end
 
   test do
